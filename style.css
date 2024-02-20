@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.addBtn {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: #45a049;
+}
+
+.listItems {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.listItems > span {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.delBtn {
+    padding: 8px 20px;
+    background-color: #e8340b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.delBtn:hover {
+    background-color: #d22c07;
+}
+
+.delBtn[disabled] {
+    opacity: 0.5; /* Dim the button */
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
